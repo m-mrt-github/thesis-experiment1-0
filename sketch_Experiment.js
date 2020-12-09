@@ -30,7 +30,7 @@ var novelInfo = [
 
 //BGMの変数
 var bgm;
-var bgmSwitch = 1;　//BGMを再生タイミングに使用する
+var bgmSwitch = 0;　//BGMを再生タイミングに使用する
 
 //小説の文節を格納する配列
 var phrase;
