@@ -660,6 +660,7 @@ function draw() {
 
 
                         //大きい文字エフェクトを入れるかどうか
+                        /*
                         if (expandTextRandom[i] > 0.8 && covBox[i] !== 1) {
                             textFont(myFont, fontSize[i] * 4);
                             tHeight = textAscent() + textDescent();
@@ -670,7 +671,7 @@ function draw() {
                             fill(0, opacity[i]);
                         } else {
                             fill(150, opacity[i]);
-                        }
+                        }*/
                         
 
                         textFont(myFont, fontSize[i]);
@@ -679,6 +680,7 @@ function draw() {
                         textLeading(fontSize[i]);
 
                         //コメントボックスを表示するコード
+                        /*
                          if (covBox[i] === 1) {
 
                             //phraseX[i] = Width / 2 - (tWidth * phrase[i].length) / 2;
@@ -695,6 +697,7 @@ function draw() {
                             fill(150, opacity[i]);
                             //textAlign(CENTER, CENTER);
                         }
+                        */
 
 
                         //テキストを表示するコード
@@ -703,7 +706,7 @@ function draw() {
                         textAlign(LEFT, TOP);
 
                         //テキストを動かすためのコード
-                        phraseX[i] = phraseX[i] + moveLengthPerFrame;
+                        //phraseX[i] = phraseX[i] + moveLengthPerFrame;
 
                         //rect(phraseX[i], phraseY[i], tWidth*phrase[i].length + 2, tHeight);
                     }
@@ -720,6 +723,7 @@ function draw() {
 
                         
                         //コメントボックスを表示するコード
+                        /*
                         if (covBox[i] === 1) {
                             //phraseX[i] = Width / 2 - tWidth / 2;
                             //phraseY[i] = Height / 2 - (tWidth * realLetterLengthForVertical[i]) / 2;
@@ -735,10 +739,12 @@ function draw() {
                             fill(150, opacity[i]);
                             //textAlign(CENTER, CENTER);
                         }
+                        */
                         
 
 
                         //大きな文字を表示する際のコード
+                        /*
                         if (expandTextRandom[i] > 0.8 && covBox[i] !== 1) {
                             textFont(myFont, fontSize[i] * 4);
                             tHeight = textAscent() + textDescent();
@@ -797,7 +803,7 @@ function draw() {
                             fill(0, opacity[i]);
                         } else {
                             fill(150, opacity[i])
-                        }
+                        }*/
 
                         //文節を表示するためのコード
                         textFont(myFont, fontSize[i]);
@@ -806,7 +812,7 @@ function draw() {
                         textLeading(fontSize[i]);
 
                         fill(150, opacity[i]);
-                        text(phrase[i], phraseX[i], phraseY[i], tWidth + 5, (tWidth + 2) * realLetterLengthForVertical[i] + 5);
+                        //text(phrase[i], phraseX[i], phraseY[i], tWidth + 5, (tWidth + 2) * realLetterLengthForVertical[i] + 5);
                         
                          //テキストを動かすためのコード
                         phraseY[i] = phraseY[i] + moveLengthPerFrame;
