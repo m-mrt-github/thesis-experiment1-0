@@ -813,10 +813,10 @@ function draw() {
                         textLeading(fontSize[i]);
 
                         fill(150, opacity[i]);
-                        //text(phrase[i], phraseX[i], phraseY[i], tWidth + 5, (tWidth + 2) * realLetterLengthForVertical[i] + 5);
+                        text(phrase[i], phraseX[i], phraseY[i], tWidth + 5, (tWidth + 2) * realLetterLengthForVertical[i] + 5);
                         
                          //テキストを動かすためのコード
-                        phraseY[i] = phraseY[i] + moveLengthPerFrame;
+                        //phraseY[i] = phraseY[i] + moveLengthPerFrame;
 
                         //句読点のためのコード
                         //。、のとき
